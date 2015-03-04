@@ -10,8 +10,6 @@ sudo apt-get -yf install build-essential m4 ocaml ocaml-native-compilers camlp4-
 sudo apt-get -yf install openssh-client libssl-dev
 
 # install opam and all dependencies
-opam install -y xe-unikernel-upload mirage
-
 PACKAGES="mirage tcpip"
 opam init -y
 eval `opam config env`
