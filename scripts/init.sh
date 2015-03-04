@@ -11,3 +11,8 @@ sudo apt-get -yf install openssh-client sshpass libssl-dev
 
 # install opam and all dependencies
 opam install -y xe-unikernel-upload mirage
+
+PACKAGES="mirage tcpip"
+opam init -y
+eval `opam config env`
+opam install $PACKAGES -y
